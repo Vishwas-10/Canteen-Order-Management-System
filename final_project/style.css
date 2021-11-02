@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("https://www.pexels.com/photo/205961/download/?search_query=buffet&tracking_id=vtu65nk2uzn") center no-repeat;
+	background-size: cover;
+	position: relative;
+    overflow: hidden;
+}
+nav{
+    margin-top: 10px;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: transparent;
+}
+.logo{
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+
+}
+.logo span{
+    color: crimson;
+}
+a{
+	text-decoration: none;
+	color: #eee;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 32%;
+}
+.nav-links li{
+    list-style-type: none;
+}
+
+.nav-links a{
+    font-size: 14px;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none !important;
+    color: rgba(255, 255, 255);
+    position: relative; 
+}
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+.btn_login:hover {
+    border-color: #ff6014;
+    background: #ff6014;
+    }
+.btn_login{
+    background: #ff6014;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 25px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    }
+.btn_login:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    }
