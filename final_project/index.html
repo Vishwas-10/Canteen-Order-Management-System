@@ -22,7 +22,12 @@
                 <li><a href = "#">ABOUT</a></li>
                 <li><a href = "#">CONTACT</a></li>
             </ul>
-            <button class="btn_login"><a href="#">LOG IN</a></button>
+            <button class="btn_login" onclick="openLogin()">LOG IN</button>
+            <div class = "form-login" id="LoginForm">
+                <h1 style="text-align: center;">Login</h1>
+                <button class="close-btn" onclick="closeLogin()"></button>
+    
+            </div>
         </nav>
         <!--<div class="ovtxt">
             <h1>WELCOME TO LOGO</h1>
@@ -62,6 +67,15 @@
             </div>
         </div>
     </div>
+<script>
+    function openLogin(){
+        document.getElementById("LoginForm").style.display="block";
+    }
+    function closeLogin(){
+        document.getElementById("LoginForm").style.display="none";
+    }
+</script>
+
 </body>
 </html>
 
