@@ -3,43 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
+    <title>Test</title>
+
+    <!-- Custom CSS file -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <!-- Owl carousel CDN -->
+    <!-- Owl-carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div class = "nav__logo">
-                <a href="index.html" class = "nav__logo">HO<span class="text-primary">T C</span>HIX<span class="text-primary">.</span></a>
-            </div>
-            <ul class = "nav__links">
-                <li><a href = "index.html">HOME</a></li>
-                <li><a href = "#">MENU</a></li>
-                <li><a href = "#">ABOUT</a></li>
-                <li><a href = "#">CONTACT</a></li>
-            </ul>
-            <button class="btn_login" onclick="openLogin()">LOG IN</button>
-            <div class = "form-login" id="LoginForm">
-                <h1 id="Login_text">Log in</h1>
-                <button class="close-btn" onclick="closeLogin()"></button>
-        
-                <input type="text" placeholder="Username" name="uname" required>
+    <!-- Header section (START)-->
+    <header id="header">
+        <!-- Navigation bar (START) -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent color-second-bg">
+            <a class="navbar-brand" href="#">HO<span>T C</span>HIX<span>.</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav m-auto font-rubik nav-fill">
+                <li class="nav-item ">
+                  <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">MENU</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+              </ul>
+              <button class="btn_login text-white" onclick="openLogin()">LOG IN</button>
 
-                <input type="password" placeholder="Password" name="psw" required>
-
-                <button class="Login-btn" type="submit">Login</button>
-                
+                <form action="#" class="font-size-14 font-rale">
+                  <a href="#" class="py-2 rounded-pill color-primary-bg">
+                    <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+                  </a>
+                </form>
             </div>
         </nav>
-        <!--<div class="ovtxt">
-            <h1>WELCOME TO LOGO</h1>
-        </div>
-        -->
+        <!-- Navigation bar (END)-->
     </header>
+    <!-- Header section (END)-->
+
+    <!-- Login Page (START)-->
+    <div class = "form-login" id="LoginForm">
+        <h1 id="Login_text">Log in</h1>
+        <button class="close-btn" onclick="closeLogin()"></button>
+
+        <input type="text" placeholder="Username" name="uname" required>
+
+        <input type="password" placeholder="Password" name="psw" required>
+
+        <button class="Login-btn" type="submit">Login</button>
+    </div>
+    <!-- Login Page (END)-->
+
+    <!-- Owl Carousel (HERO IMAGE) (START)-->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active drk">
+            <img class="d-block w-100" src="img/banner1.jpeg" alt="First slide">
+          </div>
+          <div class="carousel-item drk">
+            <img class="d-block w-100" src="img/banner2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item drk">
+            <img class="d-block w-100" src="img/banner3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- Owl Carousel (HERO IMAGE) (END)-->
+
+    <!-- CSS GRID (MENU) (START)-->
     <div class="main_menu">
         <div class="container">
             <div class="Our_menu">
@@ -48,48 +109,40 @@
             <div class="menu">
                 <div class="menu__item menu__item--1">
                     <img src="img/img-1.jpg" alt="Lunch" class="menu__img">
-                    <div class="btn_lun"><button class="btn1"><a href="#">LUNCH</a></button></div>
+                    <div class="btn_lun"><button class="btn1"><a href="#" class="text-decoration-none text-white">LUNCH</a></button></div>
                 </div>
                 <div class="menu__item menu__item--2">
                     <img src="img/img-2.jpg" alt="Dinner" class="menu__img">
-                    <div class="btn_din"><button class="btn2"><a href="#">DINNER</a></button></div>
+                    <div class="btn_din"><button class="btn2"><a href="#" class="text-decoration-none text-white">DINNER</a></button></div>
                 </div>
                 <div class="menu__item menu__item--3">
                     <img src="img/img-3.jpg" alt="Breakfast" class="menu__img">
-                    <div class="btn_bre"><button class="btn3"><a href="#">BREAKFAST</a></button></div>
+                    <div class="btn_bre"><button class="btn3"><a href="#" class="text-decoration-none text-white">BREAKFAST</a></button></div>
                 </div>
                 <div class="menu__item menu__item--4">
                     <img src="img/img-4.jpg" alt="Drinks" class="menu__img">
-                    <div class="btn_dri"><button class="btn4"><a href="#">DRINKS</a></button></div>
+                    <div class="btn_dri"><button class="btn4"><a href="#" class="text-decoration-none text-white">DRINKS</a></button></div>
                 </div>
                 <div class="menu__item menu__item--5">
                     <img src="img/img-5.jpg" alt="Snacks" class="menu__img">
-                    <div class="btn_sna"><button class="btn5"><a href="#">SNACKS</a></button></div>
+                    <div class="btn_sna"><button class="btn5"><a href="#" class="text-decoration-none text-white">SNACKS</a></button></div>
                 </div>
                 <div class="menu__item menu__item--6">
                     <img src="img/img-6.jpg" alt="Desert" class="menu__img">
-                    <div class="btn_des"><button class="btn6"><a href="#">DESERT</a></button></div>
+                    <div class="btn_des"><button class="btn6"><a href="#" class="text-decoration-none text-white">DESERT</a></button></div>
                 </div>
             </div>
         </div>
-    </div>
-<script>
-    function openLogin(){
-        document.getElementById("LoginForm").style.display="block";
-    }
-    function closeLogin(){
-        document.getElementById("LoginForm").style.display="none";
-    }
-</script>
+        <!-- CSS GRID (MENU) (END)-->
 
+    </div>
+    
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- Owl Carousel Js file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>    
+<!-- Custom Javascript -->
+<script src="app.js"></script>
 </body>
 </html>
-
-<!-- Photo by Igor Ovsyannykov from Pexels 
-    Photo by Kaboompics .com from Pexels
-    Photo by Rajesh TP from Pexels
-    Photo by Creative Vix from Pexels-->
-
-    
-    
-    
