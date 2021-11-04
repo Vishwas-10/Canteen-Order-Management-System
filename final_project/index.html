@@ -24,9 +24,15 @@
             </ul>
             <button class="btn_login" onclick="openLogin()">LOG IN</button>
             <div class = "form-login" id="LoginForm">
-                <h1 style="text-align: center;">Login</h1>
+                <h1 id="Login_text">Log in</h1>
                 <button class="close-btn" onclick="closeLogin()"></button>
-    
+        
+                <input type="text" placeholder="Username" name="uname" required>
+
+                <input type="password" placeholder="Password" name="psw" required>
+
+                <button class="Login-btn" type="submit">Login</button>
+                
             </div>
         </nav>
         <!--<div class="ovtxt">

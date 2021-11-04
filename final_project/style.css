@@ -94,7 +94,7 @@ button {
 }
 .close-btn{
     float:right;
-    margin-top:-55px;
+    margin-top:-53px;
     margin-right:-10px;
     font-size: 31px;
 
@@ -107,13 +107,49 @@ button {
     display: none;
     height: 500px;
     width: 500px;
-    background-color: white;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
+    background-color: white ;
+    /*background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);*/
 }
+.Login-btn{
+    color: black;
+    background-color: #ff133ac0;
+    margin-top: 5%;
+    padding: 14px 20px;
+    width: 100%;
+    font-family:"San Francisco", Helvetica, Arial, sans-serif ;
+    border-radius: 20px;
+    font-size: 20px;
+
+}
+.Login-btn:hover{
+    background-color:#f85307;
+}
+#Login_text{
+    text-align: left;
+    font-family:sans-serif;
+    font-size: 25px;
+    color: red;
+}
+#LoginForm input {
+    width: 90%;
+    outline: 0;
+    border-width: 0 0 2px;
+    font-family: "San Francisco", Helvetica, Arial, sans-serif;
+    height: 10%;
+    border-color: none;
+    transition: all 0.5s ease-in-out;
+    margin-top: 50px;
+  } 
+ #LoginForm input:focus{
+      border-color: #f85307;
+      width: 100%;
+  }
 .main_menu{
     position: absolute;
     width: 100%;
