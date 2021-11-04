@@ -4,61 +4,39 @@
     box-sizing: border-box;
 }
 header{
+    position: fixed;
 	width: 100%;
-	height: 100vh;
-	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("https://www.pexels.com/photo/205961/download/?search_query=buffet&tracking_id=vtu65nk2uzn") center no-repeat;
-	background-size: cover;
-	position: relative;
     overflow: hidden;
+    z-index: 2;
 }
-nav{
-    display: flex;
-    width: 100%;
-    height: 85px;
-    margin-top: 10px;
-    font-family: 'Nunito', sans-serif;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color: transparent;
+.navbar{
+    font-family: 'Nunito', sans-serif; 
 }
-.nav__logo{
-    font-family: 'Nunito', sans-serif;
+.bg-transparent{
+    transition: 0.75s ease;
+}
+.bg-transparent.scrolled{
+    background: #000 !important;
+}
+.navbar .navbar-brand{
+    padding-left: 20px;
+    padding-top: 6px;
     font-size: 35px;
     font-weight: bold;
     color: white;
     letter-spacing: 2px;
 
 }
-.nav__logo span{
-    color: crimson;
+.navbar .navbar-brand span{
+    color: #f85307;
 }
-a{
-	text-decoration: none;
-	color: #eee;
-}
-.nav__links{
-    display: flex;
-    justify-content: space-around;
-    width: 35%;
-}
-.nav__links li{
-    list-style-type: none;
-
-}
-
-.nav__links a{
+.navbar-nav{
+    width: 50%;
     font-size: 19px;
-    padding: 10px 15px;
-    display: inline-block;
-    text-decoration: none !important;
-    color: rgba(255, 255, 255);
-    position: relative; 
-    transition: font-size 0.5s;
 }
-.nav__links a:hover{
-    color: #ff6014;
+.nav-link{
     font-size: 22px;
+    padding-left: 100px;
 }
 button {
     position: relative;
@@ -113,6 +91,7 @@ button {
     transform: translate(-50%, -50%);
     padding: 10px;
     background-color: white ;
+    z-index: 1;
     /*background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);*/
 }
@@ -146,10 +125,31 @@ button {
     transition: all 0.5s ease-in-out;
     margin-top: 50px;
   } 
- #LoginForm input:focus{
-      border-color: #f85307;
-      width: 100%;
+#LoginForm input:focus{
+    border-color: #f85307;
+    width: 100%;
   }
+
+
+/* Top - Carousel */
+.carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+.drk:after{
+    content:"";
+    display: block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5));
+}
+
+/* Menu - grid */
 .main_menu{
     position: absolute;
     width: 100%;
@@ -261,8 +261,6 @@ button {
     font-weight: 400;
     letter-spacing: .05rem;
 }
-
-
-  
-
-
+.btn_des a{
+    text-decoration: none;
+}
