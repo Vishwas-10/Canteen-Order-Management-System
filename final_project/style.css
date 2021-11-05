@@ -82,7 +82,7 @@ button:focus {
 .upper-login{
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     left: 0;
     top:0;
     height: 100%;
@@ -90,15 +90,15 @@ button:focus {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.7);
     overflow: auto;
-    z-index: 2;
+    
 }
 .animate {
     animation: animatetop 0.6s
   }
     
 @keyframes animatetop {
-    from {top:0%} 
-    to {top:50%}
+    from {transform:translate3d(-250px, -500px,0);} 
+    to {transform:translate3d(-250px, -250px,0);}
   } 
 .form-login{
     background-image: url(img/img-login.jpg);
@@ -108,7 +108,7 @@ button:focus {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-250px, -250px,0);
     padding: 10px;
     background-color: white ;
 }
@@ -134,8 +134,8 @@ button:focus {
     color: #f85307;
 }
 #LoginForm input {
-    opacity: 0.8;
-    width: 90%;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 430px;
     outline: 0;
     border-width: 0 0 2px;
     font-family: "San Francisco", Helvetica, Arial, sans-serif;
@@ -146,12 +146,11 @@ button:focus {
   } 
 #LoginForm input:focus{
     border-color: #f85307;
-    width: 95%;
-    opacity: 0.9;
+    width: 455px;
+    background-color: rgba(255, 255, 255, 0.95);
   }
 #signup_login{
     font-size: 20px;
-    width: 100%;
     font-family: 'Nunito', sans-serif; 
 }
 
