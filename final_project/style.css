@@ -47,11 +47,11 @@ button {
     background-color: transparent;
     cursor: pointer;
   }
+button:focus {
+    outline:none !important;
+}
 .btn_login:hover {
-    border-color: #ff6014;
-    background: #ff6014;
-    height: 50px;
-    font-size: 20px;
+    background: #ff133a;
     }
 .btn_login{
     width: 120px;
@@ -65,24 +65,44 @@ button {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: .05rem;
-    transition:font-size 0.3s, width 0.8s;
     }
 .btn_login:not(:disabled):not(.disabled) {
     cursor: pointer;
 }
 .close-btn{
     float:right;
-    margin-top:-53px;
-    margin-right:-10px;
+    top: -60px;
     font-size: 31px;
-
+    color: red;
 }
 .close-btn:before {
     content: "×";
 }
 
-.form-login{
+.upper-login{
     display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.7);
+    overflow: auto;
+    z-index: 2;
+}
+.animate {
+    animation: animatezoom 0.6s
+  }
+    
+@keyframes animatezoom {
+    from {top:0%} 
+    to {top:50%}
+  } 
+.form-login{
+    background-image: url(img/img-login.jpg);
+    background-size: cover;
     height: 500px;
     width: 500px;
     position: absolute;
@@ -91,13 +111,10 @@ button {
     transform: translate(-50%, -50%);
     padding: 10px;
     background-color: white ;
-    z-index: 1;
-    /*background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);*/
 }
 .Login-btn{
     color: black;
-    background-color: #ff133ac0;
+    background-color: #ff133ad8;
     margin-top: 5%;
     padding: 14px 20px;
     width: 100%;
@@ -107,15 +124,17 @@ button {
 
 }
 .Login-btn:hover{
-    background-color:#f85307;
+    background-color:#ff133a;
 }
 #Login_text{
+    font-weight: bold;
     text-align: left;
-    font-family:sans-serif;
-    font-size: 25px;
-    color: red;
+    font-family:'Nunito', sans-serif;
+    font-size: 30px;
+    color: #f85307;
 }
 #LoginForm input {
+    opacity: 0.8;
     width: 90%;
     outline: 0;
     border-width: 0 0 2px;
@@ -123,13 +142,19 @@ button {
     height: 10%;
     border-color: none;
     transition: all 0.5s ease-in-out;
-    margin-top: 50px;
+    margin-top: 50px !important;
   } 
 #LoginForm input:focus{
     border-color: #f85307;
-    width: 100%;
+    width: 95%;
+    opacity: 0.9;
   }
-
+#signup_login{
+    font-size: 20px;
+    color: rgb(9, 75, 255);
+    width: 100%;
+    font-family: 'Nunito', sans-serif; 
+}
 
 /* Top - Carousel */
 .carousel-item img{

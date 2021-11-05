@@ -4,8 +4,15 @@ $(window).scroll(function(){
 });
 
 function openLogin(){
-    document.getElementById("LoginForm").style.display="block";
+    document.getElementById("upperLogin").style.display="block";
 }
 function closeLogin(){
-    document.getElementById("LoginForm").style.display="none";
+    document.getElementById("upperLogin").style.display="none";
+}
+var login = document.getElementById("upperLogin");
+
+window.onclick = function(event) {
+    if (event.target == login) {
+        login.style.display = "none";
+    }
 }
