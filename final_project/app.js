@@ -3,13 +3,16 @@ $(window).scroll(function(){
     $('nav').toggleClass('scrolled', $(this).scrollTop()>650);
 });
 
+
+var login = document.getElementById("upperLogin");
+
 function openLogin(){
-    document.getElementById("upperLogin").style.display="block";
+    login.style.display="block";
 }
 function closeLogin(){
-    document.getElementById("upperLogin").style.display="none";
+    login.style.display="none";
 }
-var login = document.getElementById("upperLogin");
+
 
 window.onclick = function(event) {
     if (event.target == login) {
