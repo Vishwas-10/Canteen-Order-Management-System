@@ -7,8 +7,9 @@ $(window).scroll(function(){
 
 
 // Login pop up 
-var login = document.getElementById("upperLogin");
+const login = document.getElementById("upperLogin");
 
+//function to open and close Login block
 function openLogin(){
     login.style.display="block";
 }
@@ -16,10 +17,10 @@ function closeLogin(){
     login.style.display="none";
 }
 
-
+//function closes Login when user clicks outside the login box
 window.onclick = function(event) {
     if (event.target == login) {
-        login.style.display = "none";
+        closeLogin();
     }
 }
 

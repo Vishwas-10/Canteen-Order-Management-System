@@ -75,16 +75,6 @@ button:focus {
 .btn_login:not(:disabled):not(.disabled){
     cursor: pointer;
 }
-.close-btn{
-    float:right;
-    top: -60px;
-    font-size: 31px;
-    color: red;
-
-}
-.close-btn:before {
-    content: "×";
-}
 
 /* Sign up / Sign in form */
 .upper-login{
