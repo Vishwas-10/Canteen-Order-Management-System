@@ -3,6 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    background-color: #000;
+}
 header{
     position: fixed;
 	width: 100%;
@@ -51,11 +54,12 @@ button:focus {
     outline:none !important;
 }
 .btn_login:hover {
-    background: #ff133a;
-    }
+    border-color: #ff6014;
+    background: #ff6014;
+}
 .btn_login{
     width: 120px;
-    background: #ff133be5;
+    background: #ff6014;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 25px;
@@ -65,8 +69,8 @@ button:focus {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: .05rem;
-    }
-.btn_login:not(:disabled):not(.disabled) {
+}
+.btn_login:not(:disabled):not(.disabled){
     cursor: pointer;
 }
 .close-btn{
@@ -74,6 +78,7 @@ button:focus {
     top: -60px;
     font-size: 31px;
     color: red;
+
 }
 .close-btn:before {
     content: "×";
@@ -92,14 +97,15 @@ button:focus {
     overflow: auto;
     
 }
-.animate {
+.animate{
     animation: animatetop 0.6s
-  }
+}
     
 @keyframes animatetop {
     from {transform:translate3d(-250px, -500px,0);} 
     to {transform:translate3d(-250px, -250px,0);}
-  } 
+}
+
 .form-login{
     background-image: url(img/img-login.jpg);
     background-size: cover;
@@ -114,7 +120,7 @@ button:focus {
 }
 .Login-btn{
     color: black;
-    background-color: #ff133ad8;
+    background-color: #ff6014;
     margin-top: 5%;
     padding: 14px 20px;
     width: 100%;
@@ -124,37 +130,35 @@ button:focus {
 
 }
 .Login-btn:hover{
-    background-color:#ff133a;
+    background-color:#f85307;
 }
 #Login_text{
-    font-weight: bold;
     text-align: left;
-    font-family:'Nunito', sans-serif;
-    font-size: 30px;
-    color: #f85307;
+    font-family:sans-serif;
+    font-size: 25px;
+    color: red;
 }
 #LoginForm input {
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 430px;
+    width: 90%;
     outline: 0;
     border-width: 0 0 2px;
     font-family: "San Francisco", Helvetica, Arial, sans-serif;
     height: 10%;
     border-color: none;
     transition: all 0.5s ease-in-out;
-    margin-top: 50px !important;
+    margin-top: 50px;
   } 
 #LoginForm input:focus{
     border-color: #f85307;
-    width: 455px;
-    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
   }
-#signup_login{
-    font-size: 20px;
-    font-family: 'Nunito', sans-serif; 
-}
+
 
 /* Top - Carousel */
+.Hero-car{
+    width:100%;
+    height: 96vh;
+}
 .carousel-item img{
     object-fit: cover;
     object-position: center;
@@ -172,13 +176,18 @@ button:focus {
     background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5));
 }
 
+#main{
+    display:inline-block;
+    padding:0px;
+}
 /* Menu - grid */
 .main_menu{
-    position: absolute;
+    position: relative;
     width: 100%;
+    height: 100vh;
     background-color: black;
 }
-.container {
+.main_menu .con {
     width: 60%;
     margin: 2rem auto;
     justify-content: center;
@@ -186,6 +195,7 @@ button:focus {
 }
 .Our_menu{
     padding-bottom: 15px;
+    padding-top: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -286,4 +296,27 @@ button:focus {
 }
 .btn_des a{
     text-decoration: none;
+}
+
+.cart{
+    font-size: 14;
+    font-family: 'Nunito', sans-serif;
+}
+.food_hd{
+    font-size: 20;
+    font-family: 'Nunito', sans-serif;
+    color: #f85307;
+}
+.font-rale{
+    font-family: 'Nunito', sans-serif;
+}
+.Food-Carousel{
+    background: #000;
+    position: relative;
+}
+
+.btn-warning{
+    background-color: #f85307 !important;
+    color: #C6C6C6 !important;
+    border-color: #f85307 !important;
 }
