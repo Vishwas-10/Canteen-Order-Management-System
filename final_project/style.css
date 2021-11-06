@@ -86,7 +86,6 @@ button:focus {
     top:0;
     height: 100%;
     width: 100%;
-    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.7);
     overflow: auto;
     padding-top: 200px;
