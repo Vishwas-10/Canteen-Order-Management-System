@@ -69,14 +69,10 @@
             
             <form action="">
               <h1>Create Account</h1>
-              <div class="social-container">
-                <a href="#" class="food_icon" onClick="return false;"><i class="fas fa-hamburger"></i></a>
-                <a href="#" class="food_icon" onClick="return false;"><i class="fas fa-ice-cream"></i></a>
-                <a href="#" class="food_icon" onClick="return false;"><i class="fas fa-pizza-slice"></i></a>
-              </div>
               <input type="text" name="name" placeholder="Name">
               <input type="email" name="email" placeholder="Email">
               <input type="password" name="password" placeholder="Password">
+              <input type="hostelno" name="hostelno" placeholder="Hostel Number">
               <button>SignUp</button>
             </form>
             </div>
@@ -88,7 +84,7 @@
                 <a href="#" class="food_icon" onClick="return false;"><i class="fas fa-ice-cream"></i></a>
                 <a href="#" class="food_icon" onClick="return false;"><i class="fas fa-pizza-slice"></i></a>
               </div>
-              <span>or use your account</span>
+              <span>use your account</span>
               <input type="email" name="email" placeholder="Email">
               <input type="password" name="password" placeholder="Password">
               <a href="#">Forgot Your Password</a>
@@ -150,27 +146,27 @@
                 <div class="menu">
                     <div class="menu__item menu__item--1">
                         <img src="img/img-1.jpg" alt="Lunch" class="menu__img">
-                        <div class="btn_lun"><button class="btn1"><a href="#" class="text-decoration-none text-white">LUNCH</a></button></div>
+                        <div class="btn_lun"><button class="btn1"><a href="#lunc" class="text-decoration-none text-white">LUNCH</a></button></div>
                     </div>
                     <div class="menu__item menu__item--2">
                         <img src="img/img-2.jpg" alt="Dinner" class="menu__img">
-                        <div class="btn_din"><button class="btn2"><a href="#" class="text-decoration-none text-white">DINNER</a></button></div>
+                        <div class="btn_din"><button class="btn2"><a href="#dinn" class="text-decoration-none text-white">DINNER</a></button></div>
                     </div>
                     <div class="menu__item menu__item--3">
                         <img src="img/img-3.jpg" alt="Breakfast" class="menu__img">
-                        <div class="btn_bre"><button class="btn3"><a href="#" class="text-decoration-none text-white">BREAKFAST</a></button></div>
+                        <div class="btn_bre"><button class="btn3"><a href="#brea" class="text-decoration-none text-white">BREAKFAST</a></button></div>
                     </div>
                     <div class="menu__item menu__item--4">
                         <img src="img/img-4.jpg" alt="Drinks" class="menu__img">
-                        <div class="btn_dri"><button class="btn4"><a href="#" class="text-decoration-none text-white">DRINKS</a></button></div>
+                        <div class="btn_dri"><button class="btn4"><a href="#drin" class="text-decoration-none text-white">DRINKS</a></button></div>
                     </div>
                     <div class="menu__item menu__item--5">
                         <img src="img/img-5.jpg" alt="Snacks" class="menu__img">
-                        <div class="btn_sna"><button class="btn5"><a href="#" class="text-decoration-none text-white">SNACKS</a></button></div>
+                        <div class="btn_sna"><button class="btn5"><a href="#snac" class="text-decoration-none text-white">SNACKS</a></button></div>
                     </div>
                     <div class="menu__item menu__item--6">
                         <img src="img/img-6.jpg" alt="Desert" class="menu__img">
-                        <div class="btn_des"><button class="btn6"><a href="#" class="text-decoration-none text-white">DESERT</a></button></div>
+                        <div class="btn_des"><button class="btn6"><a href="#dese" class="text-decoration-none text-white">DESERT</a></button></div>
                     </div>
                 </div>
             </div>
@@ -179,29 +175,29 @@
 
         <!-- Food Carousel (START)-->
         <!-- Breakfast -->
-        <div class="Food-Carousel">
-            <div class="container py-5">
-                <h4 class="food_hd">BREAKFAST</h4>
-                <hr color= "#f85307">
-                <!-- Owl Carousel -->
-                <div class="owl-carousel owl-theme">
-                    <div class="item py-2">
-                        <div class="product font-rale"></div>
-                        <a href="#"><img src="img/bf1.jpg" alt="Bread Toast" class="img-fluid"></a>
-                        <div class="text-center py-2">
-                            <h6 >Bread Toast</h6>
-            
-                            <div class="price">
-                              <span>₹70</span>
-                            </div>
-                            <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+        <div class="Food-Carousel" id="brea">
+          <div class="container py-5">
+              <h4 class="food_hd">BREAKFAST</h4>
+              <hr color= "#f85307">
+              <!-- Owl Carousel -->
+              <div class="owl-carousel owl-theme">
+                  <div class="item py-2">
+                      <div class="product font-rale"></div>
+                      <a href="#"><img src="img/lun1.jpg" alt="Pizza" class="img-fluid"></a>
+                      <div class="text-center py-2">
+                          <h6 >PIZZA</h6>
+          
+                          <div class="price">
+                            <span>₹150</span>
                           </div>
-                    </div>
-                </div>
-            </div>
+                          <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                        </div>
+                  </div>
+              </div>
+          </div>
         </div>
         <!-- LUNCH -->
-        <div class="Food-Carousel">
+        <div class="Food-Carousel" id="lunc">
             <div class="container py-5">
                 <h4 class="food_hd">LUNCH</h4>
                 <hr color= "#f85307">
@@ -223,7 +219,7 @@
             </div>
         </div>
         <!-- SNACKS -->
-        <div class="Food-Carousel">
+        <div class="Food-Carousel" id="snac">
             <div class="container py-5">
                 <h4 class="food_hd">SNACKS</h4>
                 <hr color= "#f85307">
@@ -245,7 +241,7 @@
             </div>
         </div>
         <!-- DINNER -->
-        <div class="Food-Carousel">
+        <div class="Food-Carousel" id="dinn">
             <div class="container py-5">
                 <h4 class="food_hd">DINNER</h4>
                 <hr color= "#f85307">
@@ -267,7 +263,7 @@
             </div>
         </div>
         <!-- DESERT -->
-        <div class="Food-Carousel">
+        <div class="Food-Carousel" id="dese">
             <div class="container py-5">
                 <h4 class="food_hd">DESERT</h4>
                 <hr color= "#f85307">
@@ -289,7 +285,7 @@
             </div>
         </div>
         <!-- DRINKS -->
-        <div class="Food-Carousel">
+        <div class="Food-Carousel" id="drin">
             <div class="container py-5">
                 <h4 class="food_hd">DRINKS</h4>
                 <hr color= "#f85307">
