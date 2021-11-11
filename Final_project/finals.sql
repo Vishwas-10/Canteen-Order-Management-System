@@ -1,10 +1,10 @@
-CREATE DATABASE finals;
-use finals;
+
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `food`
 --
+CREATE DATABASE finals;
 
 CREATE TABLE `food` (
                            `food_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -78,9 +78,9 @@ INSERT INTO `food` (`food_id`, `food_name`, `food_cat`, `food_price`, `food_imag
                                                                                         (51, 'Pepsi', 'Drinks', 20.00,'./img/food/pepsi.jpg'),
                                                                                         (52, 'Red Bull', 'Drinks', 20.00,'./img/food/red-bull.jpg');
 
------------------------------------------------------------
+-- ---------------------------------------------------------
 
--- Tble Structure for `orders`
+-- Table Structure for `orders`
 
 CREATE TABLE `orders` (
                         `order_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -91,9 +91,9 @@ CREATE TABLE `orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
-------------------------------------------------------------
+-- ----------------------------------------------------------
 
---Table Structure for `ordersItems`
+-- Table Structure for `ordersItems`
 
 CREATE TABLE `ordersItems` (
                         `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -104,9 +104,9 @@ CREATE TABLE `ordersItems` (
                         PRIMARY KEY(`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--------------------------------------------------------------
+-- -----------------------------------------------------------
 
---Table Structure for `user`
+-- Table Structure for `user`
 
 CREATE TABLE `user` (
                         `user_id` int(11) NOT NULL AUTO_INCREMENT,
