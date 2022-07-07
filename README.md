@@ -85,4 +85,5 @@ open browser localhost/'foldername'  (without the quotes)
   -  **FOOD ITEMS**
 ![Screenshot](https://github.com/Vishwas-10/Canteen-Order-Management-System/blob/main/preview/Screenshot%202022-07-07%20at%206.35.05%20PM.png)
   -  **CART**
+  ![Screenshot](https://github.com/Vishwas-10/Canteen-Order-Management-System/blob/main/preview/Screenshot%202022-07-07%20at%206.51.59%20PM.png)
 
