@@ -74,5 +74,15 @@ import file data/final.sql
 open browser localhost/'foldername'  (without the quotes)
 ```
 
-
+# Preview
+  -  **HOME**
+![Screenshot](https://github.com/Vishwas-10/Canteen-Order-Management-System/blob/main/preview/Screenshot%202022-07-07%20at%206.33.52%20PM.png)
+  -  **LOGIN**
+![Screenshot](https://github.com/Vishwas-10/Canteen-Order-Management-System/blob/main/preview/Screenshot%202022-07-07%20at%206.35.53%20PM.png)
+![Screenshot](https://github.com/Vishwas-10/Canteen-Order-Management-System/blob/main/preview/Screenshot%202022-07-07%20at%206.36.04%20PM.png)
+  -  **MENU**
+![Screenshot](https://github.com/Vishwas-10/Canteen-Order-Management-System/blob/main/preview/Screenshot%202022-07-07%20at%206.34.28%20PM.png)
+  -  **FOOD ITEMS**
+![Screenshot](https://github.com/Vishwas-10/Canteen-Order-Management-System/blob/main/preview/Screenshot%202022-07-07%20at%206.35.05%20PM.png)
+  -  **CART**
 
