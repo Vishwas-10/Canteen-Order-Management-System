@@ -48,7 +48,7 @@ git clone https://github.com/Vishwas-10/Canteen-Order-Management-System
 
 # Change directory into repository folder
 
-cd Adulting101
+cd Canteen-Order-Management-System
 
 ```
 
